@@ -1,0 +1,78 @@
+<div class="container">
+
+    <div class="mb-2">
+        <button class="btn-btn-outline-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">Filter</button>
+    </div>
+    <div [collapse]="isCollapsed" [isAnimated]="true">
+        <div class="border mb-2 shadow-sm" style="width: 250px;">
+            <form>
+                <div class="row mx-0">
+                    <div class="col">
+                        <h6>Frameworks:</h6>
+                        <div>
+                            <input [(ngModel)]="isChecked[0]" (change)="onChange(data[0], $event.target)"
+                                type="checkbox" name="angular" id="angular">
+                            <label for="angular">Angular</label>
+                        </div>
+                        <div>
+                            <input [(ngModel)]="isChecked[1]" (change)="onChange(data[7], $event.target)"
+                                type="checkbox" name="spring" id="srpingboot">
+                            <label for="srpingboot">SpringBoot</label>
+                        </div>
+                        <div>
+                            <input [(ngModel)]="isChecked[2]" (change)="onChange(data[1], $event.target)"
+                                type="checkbox" name="bootstrap" id="bootstrap">
+                            <label for="bootstrap">Bootstrap</label>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <h6>Languages:</h6>
+                        <div>
+                            <input [(ngModel)]="isChecked[3]" (change)="onChange(data[3], $event.target)"
+                                type="checkbox" name="html" id="html">
+                            <label for="html">HTML</label>
+                        </div>
+                        <div>
+                            <input [(ngModel)]="isChecked[4]" (change)="onChange(data[2], $event.target)"
+                                type="checkbox" name="css" id="css">
+                            <label for="css">CSS</label>
+                        </div>
+                        <div>
+                            <input [(ngModel)]="isChecked[5]" (change)="onChange(data[4], $event.target)"
+                                type="checkbox" name="angular" id="javascript">
+                            <label for="javascript">Javascript</label>
+                        </div>
+                        <div>
+                            <input [(ngModel)]="isChecked[6]" (change)="onChange(data[8], $event.target)"
+                                type="checkbox" name="type" id="typescript">
+                            <label for="typescript">Typescript</label>
+                        </div>
+                        <div>
+                            <input [(ngModel)]="isChecked[7]" (change)="onChange(data[6], $event.target)"
+                                type="checkbox" name="python" id="python">
+                            <label for="python">Python</label>
+                        </div>
+                        <div>
+                            <input [(ngModel)]="isChecked[8]" (change)="onChange(data[5], $event.target)"
+                                type="checkbox" name="java" id="java">
+                            <label for="java">Java</label>
+                        </div>
+                    </div>
+                    <div class="w-100 text-center" *ngIf="!reset">
+                        <button class="btn btn-secondary m-2" (click)="resetIt()" [disabled]="reset">Reset</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div *ngFor="let data of projectData; let i=index" class="col-lg-4 col-md-6 mb-4"
+            [ngStyle]="{'min-width': '380px', 'max-width': '380px'}">
+            <app-project-cards [project]="data"></app-project-cards>
+        </div>
+    </div>
+
+</div>

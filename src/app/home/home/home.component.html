@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/dp.jpg" alt="Profile Picture" width="250" height="250"
+                    class=" rounded-circle profileImg">
+                <p class="mt-1">I'm a passionate Software Engineer specializing in frontend development, with expertise
+                    in Angular, HTML, CSS, JavaScript, and TypeScript. I enjoy building innovative, user-friendly web
+                    applications and focus on creating scalable solutions using Angular, NgRx, and RxJS. I thrive on
+                    problem-solving, optimizing performance, and collaborating with teams to deliver high-quality,
+                    impactful digital experiences.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h3>{{featuredData.name}}</h3>
+            </div>
+
+            <carousel>
+                <div *ngFor="let pics of featuredData.pictures">
+                    <slide>
+                        <img [src]="pics" alt="slilde" style="display: block; width: 100%;">
+                    </slide>
+                </div>
+            </carousel>
+            <p class="mt-2">{{featuredData.summary}}</p>
+            <p>Visit the portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>
