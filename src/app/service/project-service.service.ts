@@ -13,7 +13,7 @@ export class ProjectServiceService {
     summary: "Developed Ecom Applicaton for Sanofi(Life Sciences)",
     desc: "Worked on PDP, PLP, Cart, Checkout, Order History pages. Used angular concepts such as routing, components, modules, directives, state management, etc.",
     projectLink: "",
-    pictures: ["../../assets/img1.png", "../../assets/img2.png", "../../assets/img3.png"],
+    pictures: ["./assets/img1.png", "./assets/img2.png", "./assets/img3.png"],
     tags: [tags.ANGULAR, tags.TYPESCRIPT, tags.BOOTSTRAP]
   },
   {
