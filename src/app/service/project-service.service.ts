@@ -22,7 +22,7 @@ export class ProjectServiceService {
     summary: "Developed personal blog app to showcase my travelling",
     desc: "Created a personal blog from scratch with HTML, CSS, Javascript. Implemented concepts such as DOM Manipulation, Async data handling, promises, async await, fetch api. Used CSS flex box and grid.",
     projectLink: "",
-    pictures: ["../../assets/img1.png", "../../assets/img2.png", "../../assets/img3.png"],
+    pictures: ["./assets/img1.png", "./assets/img2.png", "./assets/img3.png"],
     tags: [tags.HTML, tags.JAVASCRIPT, tags.CSS]
   },
   {
@@ -31,7 +31,7 @@ export class ProjectServiceService {
     summary: "Developed frontend part for a construction company of Fortune 500",
     desc: "Worked on a user story where I had to generate a pdf with all the customer details. Used concepts such as data binding, pdf-gerenrator library, etc.",
     projectLink: "",
-    pictures: ["../../assets/img1.png", "../../assets/img2.png", "../../assets/img3.png"],
+    pictures: ["./assets/img1.png", "./assets/img2.png", "./assets/img3.png"],
     tags: [tags.JAVASCRIPT, tags.PYTHON]
   },
   {
@@ -40,7 +40,7 @@ export class ProjectServiceService {
     summary: "Developed personal portfolio showcasing all my projects",
     desc: "Personal Portfolio App made in Angular. Focused on concepts such as reusable components, routing, models/interface, angular forms.",
     projectLink: "",
-    pictures: ["../../assets/img1.png", "../../assets/img2.png", "../../assets/img3.png"],
+    pictures: ["./assets/img1.png", "./assets/img2.png", "./assets/img3.png"],
     tags: [tags.HTML, tags.PYTHON, tags.ANGULAR]
   },
   {
@@ -49,7 +49,7 @@ export class ProjectServiceService {
     summary: "Developed backend of a client using java Springboot",
     desc: "Developed an API using Java Springboot, used database SQL.",
     projectLink: "",
-    pictures: ["../../assets/img1.png", "../../assets/img2.png", "../../assets/img3.png"],
+    pictures: ["./assets/img1.png", "./assets/img2.png", "./assets/img3.png"],
     tags: [tags.JAAV, tags.SPRING]
   },
   {
@@ -58,7 +58,7 @@ export class ProjectServiceService {
     summary: "Developed full stack project for a client using java and angular",
     desc: "Completed one full stack project where frontend was based on angular and was developing api using java springboot",
     projectLink: "",
-    pictures: ["../../assets/img1.png", "../../assets/img2.png", "../../assets/img4.png"],
+    pictures: ["./assets/img1.png", "./assets/img2.png", "./assets/img4.png"],
     tags: [tags.JAAV, tags.ANGULAR, tags.BOOTSTRAP]
   }];
 
