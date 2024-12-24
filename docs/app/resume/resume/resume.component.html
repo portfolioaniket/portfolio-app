@@ -1,0 +1,116 @@
+<div class="container text-center">
+    <button class="btn btn-primary shadow border mb-5" (click)="resumeDownload()">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow accs">
+            <accordion-group (click)="workClicked = !workClicked">
+                <div accordion-heading class="d-flex align-items-center">
+                    <p class="text-white text-center flex-grow-1">Work experience</p>
+                    <p *ngIf="!workClicked" class="ml-auto text-white">v</p>
+                    <p *ngIf="workClicked" class="ml-auto text-white">></p>
+                </div>
+                <div style="text-align: left;">
+                    <h3>Software Engineer</h3>
+                    <div class="d-flex justify-content-between">
+                        <h5>Walking Tree Technologies</h5>
+                        <h5>JUNE 2024 - JULY 2024</h5>
+                    </div>
+
+
+                    <ul>
+                        <li>Successfully adapted to a new work environment, quickly learning and applying
+                            companyspecific
+                            Angular best practices, including custom directives, state management with NgRx,
+                            RxJS for reactive programming, and Angular CLI for project automation.
+                        </li>
+                        <li>
+                            Worked closely with cross-functional teams including designers, backend developers, and
+                            QA engineers to deliver high-quality, scalable web applications, ensuring seamless
+                            integration and optimal performance.
+
+                        </li>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                    <h3>Programmer Analyst</h3>
+                    <div class="d-flex justify-content-between">
+                        <h5>Cognizant</h5>
+                        <h5>NOVEMBER 2021 - MARCH 2024</h5>
+                    </div>
+
+
+                    <ul>
+                        <li>Designed and built dynamic web applications using Angular, implementing key features such
+                            as routing, forms, and component-based architecture to ensure high performance and
+                            userfriendly
+                            interfaces.
+                        </li>
+                        <li>
+                            Integrated and managed RESTful APIs for seamless communication with backend services,
+                            utilizing Angular services and HTTP client modules for efficient data handling.
+                        </li>
+                        <li>
+                            Enhanced application performance by employing Angular features like lazy loading, AOT
+                            compilation, and optimized change detection strategies, resulting in faster load times and
+                            improved user experience
+                        </li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group (click)="eduClicked = ! eduClicked">
+                <div accordion-heading class="d-flex align-items-center">
+                    <p class="text-white text-center flex-grow-1">Education</p>
+                    <p *ngIf="!eduClicked" class="ml-auto text-white">v</p>
+                    <p *ngIf="eduClicked" class="ml-auto text-white">></p>
+                </div>
+                <div style="text-align: left;">
+                    <h3>B.Tech</h3>
+                    <div class="d-flex justify-content-between">
+                        <h5>Electronics and communication engineering(ECE)</h5>
+                        <h5>AUGUST 2017 - JULY 2021</h5>
+                    </div>
+
+
+                    <ul>
+                        <li>
+                            Specialization in Electronics and Communication Engineering
+                        </li>
+                        <li>
+                            Passed with a CGPA of 6.9
+                        </li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group (click)="techClicked = !techClicked">
+                <div accordion-heading class="d-flex align-items-center">
+                    <p class="text-white text-center flex-grow-1">Technical Skills</p>
+                    <p *ngIf="!techClicked" class="ml-auto text-white">v</p>
+                    <p *ngIf="techClicked" class="ml-auto text-white">></p>
+                </div>
+                <div class="text-start row">
+                    <ul class="nav">
+                        <li *ngFor="let skill of skills" class="m-2">
+                            <h6>{{skill}}</h6>
+                        </li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group (click)="softClicked = !softClicked">
+                <div accordion-heading class="d-flex align-items-center">
+                    <p class="text-white text-center flex-grow-1">Soft Skills</p>
+                    <p *ngIf="!softClicked" class="ml-auto text-white">v</p>
+                    <p *ngIf="softClicked" class="ml-auto text-white">></p>
+                </div>
+                <div class="text-start row">
+                    <ul class="nav">
+                        <li *ngFor="let skill of softSkills" class="m-2">
+                            <h6>{{skill}}</h6>
+                        </li>
+                    </ul>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+
+
+</div>
