@@ -17,7 +17,7 @@ export class ResumeComponent {
   }
   resumeDownload() {
     const link = this.render.createElement('a')
-    link.setAttribute('href', './assets/AngularLatest.pdf')
+    link.setAttribute('href', './assets/latestAngular.pdf')
     link.setAttribute('target', '_blank')
     link.setAttribute('download', 'Resume')
     link.click()
